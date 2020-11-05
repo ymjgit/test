@@ -1,0 +1,27 @@
+JDK：Java开发工具包
+JRE：Java运行环境
+
+
+命令：
+javac编译命令
+java运行命令
+
+安装jdk：去oracle官网下载jdk，运行安装包，傻瓜式安装即可。
+如何监测JDK安装正确？
+	windows键+r打开dos窗口，在dos窗口中通过cd 命令进入到jdk的安装路径中，到bin那一层，例如：cd C:\Program Files\Java\jdk-11.0.1\bin
+	然后敲javac回车  java回车。只要出现大段文字证明安装正确。
+
+问题：如何使javac和java命令在任意盘符任意路径下使用？
+就是配置环境变量
+
+配置环境变量:
+计算机右键-属性-高级系统设置-高级-环境变量-系统变量
+点击新建：
+	变量名：JAVA_HOME
+	变量值：JDK安装路径，bin前一层  确定
+找到path，双击path编辑
+	在path变量值的位置加上：%JAVA_HOME%\bin;
+三个确定结束。
+
+
+
